@@ -213,7 +213,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg-page);color:var(--text
       <h2 class="modal-nome" id="m-nome"></h2>
       <p class="modal-desc" id="m-desc"></p>
       <div class="modal-specs">
-        <div class="spec-card"><span class="spec-label">Embalagem</span><span class="spec-val" id="m-emb"></span></div>
+        <div class="spec-card"><span class="spec-label">Complemento</span><span class="spec-val" id="m-emb"></span></div>
         <div class="spec-card"><span class="spec-label">Peso / Cx</span><span class="spec-val" id="m-peso"></span></div>
         <div class="spec-card" style="grid-column:1/-1"><span class="spec-label">Conservação</span><span class="conserva-icon" id="m-icon"></span><span class="spec-val" id="m-conserva"></span></div>
         <div class="spec-card"><span class="spec-label">Empresa</span><span class="spec-val" id="m-empresa"></span></div>
@@ -300,7 +300,7 @@ function abrirModal(cod){
   document.getElementById('m-tags').innerHTML=`<span class="m-tag m-tag-cod">${p.cod}</span><span class="m-tag m-tag-emp">${p.empresa}</span>${p.promo?'<span class="m-tag m-tag-promo">★ Promo</span>':''}`;
   document.getElementById('m-nome').textContent=p.nome;
   document.getElementById('m-desc').textContent=p.desc;
-  document.getElementById('m-emb').textContent=p.embalagem;
+  document.getElementById('m-emb').textContent=p.Complemento;
   document.getElementById('m-peso').textContent=p.peso;
   document.getElementById('m-conserva').textContent=p.conserva;
   document.getElementById('m-icon').textContent=ICON[p.tipo]||'📦';
